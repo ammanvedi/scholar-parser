@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 import org.jsoup.*;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class parser {
@@ -20,6 +21,11 @@ public class parser {
 		Elements gs_article_results = html_doc.select("#gs_ccl .gs_r .gs_ri .gs_rt a");
 		
 		System.out.println(gs_article_results.get(0).attr("href"));
+		
+		
+		for(Element e : gs_article_results ){
+			System.out.println(e.attr("href"));
+		}
 		
 	}
 
