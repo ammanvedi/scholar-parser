@@ -18,13 +18,13 @@ public class parser {
 		
 		html_doc = Jsoup.connect(parseurl).userAgent("Mozilla/5.0 (Windows; U; WindowsNT 5.1; en-US; rv1.8.1.6) Gecko/20070725 Firefox/2.0.0.6")
 			      .referrer("http://www.google.com").get();
-		Elements gs_article_results = html_doc.select("#gs_ccl .gs_r .gs_ri .gs_rt a");
-		
-		System.out.println(gs_article_results.get(0).attr("href"));
-		
-		
+		Elements gs_article_results = html_doc.select("#gs_ccl .gs_r .gs_ri");
+
 		for(Element e : gs_article_results ){
-			System.out.println(e.attr("href"));
+			article a = new article(e.select(".gs_rt a").text(), e.select(".gs_rs").text(), 
+						e.select(".gs_rt a").attr("href"), "",e.select(".gs_fl a").attr("href"));
+			articles.add(a);
+			System.out.println(a.toString());
 		}
 		
 	}
