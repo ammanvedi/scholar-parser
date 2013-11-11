@@ -21,11 +21,11 @@ public class article {
 	
 	@Override
 	public String toString(){
-		String dta = "Title: " + this.article_title + "\n" + 
-				"Link: " + this.article_link + "\n" + 
-				"Abstract: " + this.article_abstract + "\n" + 
-				"Citations: " + this.article_citations + "\n" + 
-				"related: " + this.article_link_related + "\n\n" ;
+		String dta = 
+				"Title		: 	" + this.article_title + "\n" + 
+				"Link		: 	" + this.article_link + "\n" + 
+				"Abstract	: 	" + this.article_abstract + "\n" + 
+				"Related	        :	" + this.article_link_related + "" ;
 		
 		return dta;
 	}

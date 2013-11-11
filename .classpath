@@ -7,5 +7,10 @@
 			<attribute name="javadoc_location" value="file:/Users/user/Documents/cs/COMP2013/Seeder/Prototypes/scholar-parser/libraries/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/Users/user/Documents/cs/COMP2013/Seeder/Prototypes/scholar-parser/libraries/google-gson-2.2.4/gson-2.2.4.jar" sourcepath="/Users/user/Documents/cs/COMP2013/Seeder/Prototypes/scholar-parser/libraries/google-gson-2.2.4/gson-2.2.4-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/Users/user/Documents/cs/COMP2013/Seeder/Prototypes/scholar-parser/libraries/google-gson-2.2.4/gson-2.2.4-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

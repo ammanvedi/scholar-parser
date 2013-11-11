@@ -8,10 +8,13 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import com.google.gson.Gson;
+
 public class parser {
 	
 	private ArrayList<article> articles = new ArrayList<article>();
 	private Document html_doc;
+	private Gson g = new Gson();
 	
 
 	public parser(String parseurl) throws IOException{
@@ -25,6 +28,8 @@ public class parser {
 						e.select(".gs_rt a").attr("href"), "",e.select(".gs_fl a").attr("href"));
 			articles.add(a);
 			System.out.println(a.toString());
+			System.out.println("AS JSON		:	" + g.toJson(a));
+			System.out.println("");
 		}
 		
 	}
